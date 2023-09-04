@@ -59,4 +59,4 @@ hw1-myfind
 * `-n2` 模式
     <div style="text-align: center; "><img src=https://cdn.hobbitqia.cc/20230904213719.png width ="55%"></div>
     <div style="text-align: center; "><img src=https://cdn.hobbitqia.cc/XBLP9%7DN2X9F7EY%60_VP5NECY.png width ="55%"></div>
-    <div style="text-align: center; "><img src=https://cdn.hobbitqia.cc/Y5(7]0ZN%2A}3ZVP(ITP~HY.png width ="55%"></div>
+    <div style="text-align: center; "><img src=https://cdn.hobbitqia.cc/1.png width ="55%"></div>
