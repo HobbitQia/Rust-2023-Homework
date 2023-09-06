@@ -35,7 +35,6 @@ hw3
 
 构建方法：
 ```
-```
 $ git clone https://github.com/HobbitQia/Rust-2023-Homework.git
 $ cd Rust-2023-Homework/hw2-myutil
 $ cargo test
@@ -48,5 +47,4 @@ test myrc::tests::test_myrc ... ok
 test hashmap::tests::test_hash_map ... ok
 
 test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-```
 ```
