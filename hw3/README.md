@@ -1,7 +1,7 @@
 # HW3
 
 文件结构如下：
-```
+``` shell
 hw3
 ├─ src
 │  ├─ main.rs           // 工程入口，输出提示信息
@@ -34,13 +34,13 @@ hw3
 ## 运行示例
 
 构建方法：
-```
+``` shell
 $ git clone https://github.com/HobbitQia/Rust-2023-Homework.git
 $ cd Rust-2023-Homework/hw2-myutil
 $ cargo test
 ```
 得到测试结果如下：
-```
+``` shell
 running 3 tests
 test lifo::tests::test_lifo ... ok
 test myrc::tests::test_myrc ... ok

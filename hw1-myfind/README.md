@@ -4,7 +4,7 @@
 
 当前文件夹下已经有构建好的可执行文件 `hw1-myfind`，也可以通过下面的方式自行构建。
 
-```
+``` shell
 $ git clone https://github.com/HobbitQia/Rust-2023-Homework.git
 $ cd Rust-2023-Homework/hw1-myfind
 $ cargo build # 也可以加上 --release 参数
@@ -35,7 +35,7 @@ $ cargo build # 也可以加上 --release 参数
 
 ## 文件结构
 
-```
+``` shell
 hw1-myfind
 ├─ src
 │  ├─ helper            
