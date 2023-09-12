@@ -2,7 +2,7 @@
 
 ## 简介
 
-本次作业使用 Rust [Volo 框架](https://github.com/cloudwego/volo)实现一个 Mini-Redis，支持 `GET` `SET` `DEL` `PING` 这四条基本命令，并写一个中间件 filter，可以过滤部分请求。并拓展了 `PUBLISH` `SUBSCRIBE` 命令。通过演示 client 请求 server 返回对应结果来展示其功能。
+本次作业使用 Rust [Volo 框架](https://github.com/cloudwego/volo)实现一个 Mini-Redis，支持 `GET` `SET` `DEL` `PING` 这四条基本命令，并写一个中间件 filter，可以过滤部分请求。并拓展了 `PUBLISH` `SUBSCRIBE` 命令。此外作业中还有一个中间件，用来过滤请求中带 `shabi` 的指令，对于这类指令会直接返回错误。通过演示 client 请求 server 返回对应结果来展示其功能。
 
 redis 指令的使用规范可见[官方文档](https://redis.io/commands/)
 
@@ -100,6 +100,11 @@ $ ./target/build/client [cmd]       # 运行服务端
     OK!
     "1"                                             # 返回当前有多少个客户端订阅了
     ```
+* 中间件  
+    ``` bash
+    $ ./client pubish hobbitqia "shabi"
+    2023-09-12T13:14:38.864099Z ERROR client: "application error: service error, msg: No dirty word, please!"
+    ```
 
 ## 文件结构
 
@@ -141,3 +146,7 @@ hw5-myredis/
 这里我们先 subscribe 后，输出等待信息，同时我们在另一个终端运行客户端程序，执行 publish 指令，可以看到 subscribe 的终端输出了订阅的信息，而 publish 的终端输出了订阅的客户端数量。  
 ![](https://cdn.hobbitqia.cc/20230912181004.png)
 ![](https://cdn.hobbitqia.cc/20230912181027.png)
+
+* 中间件  
+这里如果消息里出现了 `shabi`，则会返回错误，并打印日志。
+![](https://cdn.hobbitqia.cc/20230912211524.png)

@@ -107,7 +107,7 @@ async fn main() {
             }
             // tracing::info!("{:?}", info);carog
         }
-        Err(e) => tracing::error!("{:?}", e),
+        Err(e) => tracing::error!("{:?}", e.to_string()),
     }
     
 }

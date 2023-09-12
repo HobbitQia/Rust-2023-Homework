@@ -185,8 +185,8 @@ where
         // resp
 
         let info = format!("{:?}", req);
-		if info.contains("Genshin") {
-            Err(anyhow!("reject").into())
+		if info.contains("shabi") {
+            Err(anyhow!("No dirty word, please!").into())
 			// Err(S::Error::from(Error::msg("Genshin is not allowed")))
 		} else {
 			self.0.call(cx, req).await
