@@ -15,10 +15,8 @@ $ git clone https://github.com/HobbitQia/Rust-2023-Homework.git
 $ cd Rust-2023-Homework/hw5-myredis
 $ cargo build                       # 构建工程
 $ ./target/build/server             # 运行客户端
-$ ./target/build/client [cmd]            # 运行服务端
+$ ./target/build/client [cmd]       # 运行服务端
 ```
-其中也可以选择不构建，直接使用我提供的可执行文件，即直接输入 `./server` 和 `./client [cmd]` 即可。
-
 `cmd` 具体格式与 redis 类似：
 
 * `PING`
