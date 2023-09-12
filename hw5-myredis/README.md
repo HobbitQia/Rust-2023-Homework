@@ -127,19 +127,19 @@ hw5-myredis/
 
 ## 示例
 
-* 服务器：
+* 服务器：  
 ![](https://cdn.hobbitqia.cc/20230912171828.png)
 
-* 基本的 `GET` `SET` 功能
+* 基本的 `GET` `SET` 功能：  
 ![](https://cdn.hobbitqia.cc/20230912171924.png)
 
-* `DEL`
+* `DEL`：  
 ![](https://cdn.hobbitqia.cc/20230912172009.png)
 
-* `PING`
+* `PING`：  
 ![](https://cdn.hobbitqia.cc/20230912180849.png)
 
-* `SUBSCRIBE` & `PUBLISH`  
-这里我们先 subscribe 后，输出等待信息，同时我们在另一个终端运行客户端程序，执行 publish 指令，可以看到 subscribe 的终端输出了订阅的信息，而 publish 的终端输出了订阅的客户端数量。
+* `SUBSCRIBE` & `PUBLISH`：  
+这里我们先 subscribe 后，输出等待信息，同时我们在另一个终端运行客户端程序，执行 publish 指令，可以看到 subscribe 的终端输出了订阅的信息，而 publish 的终端输出了订阅的客户端数量。  
 ![](https://cdn.hobbitqia.cc/20230912181004.png)
 ![](https://cdn.hobbitqia.cc/20230912181027.png)
