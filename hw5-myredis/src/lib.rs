@@ -151,7 +151,7 @@ impl volo_gen::my_redis::ItemService for S {
                     }
                 }
                 else {
-                    response_ans.value = Some("error".to_string().into());
+                    response_ans.value = Some("Nobody subscribes.".to_string().into());
                     response_ans.response_type = ResponseType::Error;
                 }
                 Ok(response_ans)
