@@ -101,6 +101,7 @@ $ ./target/build/client [cmd]       # 运行服务端
     "1"                                             # 返回当前有多少个客户端订阅了
     ```
 * 中间件  
+  如果消息里出现了 `shabi`，则会返回错误，并打印日志。  
     ``` bash
     $ ./client pubish hobbitqia "shabi"
     2023-09-12T13:14:38.864099Z ERROR client: "application error: service error, msg: No dirty word, please!"
