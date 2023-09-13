@@ -6,6 +6,8 @@
 
 同时，使用 reqwest 构造 HTTP client 请求，对 server 进行测试。
 
+![](https://cdn.hobbitqia.cc/20230913201825.png)
+
 ## 如何在本地构建使用
 
 可以通过下面的方式自行构建。
